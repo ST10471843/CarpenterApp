@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Carpenter</string>
+    <string name="WoodPro">WoodPro</string>
+    <string name="Install_Door">Install Door</string>
+    <string name="Build_Shelf">Build Shelf</string>
+    <string name="Assemble_Furniture">Assemble Furniture</string>
+    <string name="Wood">Wood</string>
+    <string name="Nails">Nails</string>
+    <string name="Hinges">Hinges</string>
+    <string name="Specify_number_of_Hours">Specify Number Of Hours</string>
+    <string name="Calculate_cost">Calculate Cost</string>
+    <string name="Final_Cost">Final Cost</string>
+    <string name="Your_total_cost_based_on_service_and_materials_selected_is">Your total cost based on service and material selected is</string>
+    <string name="Select_Materials">Select Materials</string>
+    <string name="Select_Service">Select Service Required</string>
+    <string name="invalid_number_of_hours">Invalid number of hours</string>
+    <string name="invalid_input_hours_cannot_be_null_or_negative">Invalid input: Hours cannot be null or negative.</string>
+</resources>

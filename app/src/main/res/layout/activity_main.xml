@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@android:drawable/alert_light_frame"
+        android:backgroundTint="@color/blue"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="s">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/aleo_bold"
+            android:text="@string/WoodPro"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/tvSelect1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="@string/Select_Service"
+            android:textColor="#263238" />
+
+        <RadioGroup
+            android:id="@+id/rGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rBtn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Assemble_Furniture"
+                android:textSize="20sp"
+                tools:ignore="VisualLintButtonSize" />
+
+            <RadioButton
+                android:id="@+id/rBtn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Build_Shelf"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="VisualLintButtonSize" />
+
+            <RadioButton
+                android:id="@+id/rBtn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Install_Door"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="VisualLintButtonSize" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvSelect2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="@string/Select_Materials"
+            android:textColor="#263238" />
+
+        <CheckBox
+            android:id="@+id/cBox1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Wood"
+            android:textSize="20sp"
+            tools:ignore="VisualLintButtonSize" />
+
+        <CheckBox
+            android:id="@+id/cBox2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Nails"
+            android:textSize="20sp"
+            tools:ignore="VisualLintButtonSize" />
+
+        <CheckBox
+            android:id="@+id/cBox3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Hinges"
+            android:textSize="20sp"
+            tools:ignore="VisualLintButtonSize" />
+
+        <EditText
+            android:id="@+id/etHours"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="20dp"
+            android:autofillHints="name"
+            android:ems="10"
+            android:hint="@string/Specify_number_of_Hours"
+            android:inputType="number"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/Calculate_cost"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            tools:ignore="VisualLintButtonSize" />
+
+        <TextView
+            android:id="@+id/tvResults"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:text="@string/Final_Cost"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
